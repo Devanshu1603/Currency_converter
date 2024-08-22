@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,67 +15,72 @@ body{
     background-color: #675afe !important;
 }
 
-.container{
-  display: flex;
-  justify-content: space-between;
-  width: 1100px;
-  margin: 0px;
-  
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0px;
+
 }
-.box1{
-  width: 500px;
-  margin-top:120px;
-  padding: 30px;
-  border-radius: 7px;
+
+.box1 {
+    width: 500px;
+    margin-top: 120px;
+    padding: 30px;
+    border-radius: 7px;
 }
-.wrapper{
+
+.wrapper {
     width: 370px;
     padding: 30px;
     border-radius: 7px;
     background-color: #fff;
-    margin-top:120px;
+    margin-top: 120px;
 }
 
-.wrapper header{
+.wrapper header {
     font-size: 28px;
     font-weight: 500;
     text-align: center;
 }
-.wrapper form{
+
+.wrapper form {
     margin: 40px 0 20px 0;
 }
 
-form :where(input, select, button){
+form :where(input, select, button) {
     width: 100%;
     outline: none;
     border: none;
     border-radius: 5px;
 }
-form p{
-   font-size: 18px;
-   margin-bottom: 5px;
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
-form input{
+form input {
     height: 50px;
     font-size: 17px;
     padding: 0 15px;
     border: 1px solid #999;
 }
 
-form input:focus{
+form input:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-form .drop-list{
+form .drop-list {
     display: flex;
     margin-top: 20px;
     align-items: center;
     justify-content: space-between;
 }
-.drop-list .select-box{
+
+.drop-list .select-box {
     display: flex;
     height: 45px;
     width: 130px;
@@ -84,97 +90,111 @@ form .drop-list{
     border: 1px solid #999;
 }
 
-.select-box select{
+.select-box select {
     width: auto;
     font-size: 16px;
     margin: 0 -5px 0 5px;
 }
-.select-box select::-webkit-scrollbar{
+
+.select-box select::-webkit-scrollbar {
     width: 8px;
 }
-.select-box select::-webkit ::-webkit-scrollbar-track{
+
+.select-box select::-webkit ::-webkit-scrollbar-track {
     background: #fff;
 }
 
-.select-box select::-webkit ::-webkit-scrollbar-thumb{
+.select-box select::-webkit ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 8px;
     border-right: 2px solid #fff;
 }
-.select-box img{
+
+.select-box img {
     max-width: 25px;
 }
-.drop-list .icon{
+
+.drop-list .icon {
     cursor: pointer;
     font-size: 22px;
     margin-top: 30px;
 }
 
-form .exchange-rate{
+form .exchange-rate {
     font-size: 17px;
     margin: 20px 0 30px;
 }
 
-form button{
+form button {
     height: 52px;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
     background-color: #675afe;
 }
-.text{
-  color:#ffffff;
+
+.text {
+    color: #ffffff;
 }
 
-#btn{
-  background-color: white;
-  color: #675afe;
-  border: none;
-  width: 165px;
-  display: flex;
-  justify-content: space-evenly;
+#btn {
+    background-color: white;
+    color: #675afe;
+    border: none;
+    width: 165px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#title{
-  display: flex;
-  justify-content: space-between;
-  width: 310px;
+#title {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
 }
 
 /* responsivness */
 @media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      width: 100%;
-      padding: 10px;
-  }
-  .box1, .wrapper {
-      width: 100%;
-      margin-top: 20px;
-  }
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
 
-  .drop-list {
-      display: flex;
-      justify-content: space-evenly;
-  }
-  .drop-list .select-box {
-      width: 115%;
-      margin-bottom: 10px;
-  }
-  .drop-list .icon {
-      margin: 20px 0;
-  }
+    .box1,
+    .wrapper {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .drop-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .drop-list .select-box {
+        width: 115%;
+        margin-bottom: 10px;
+    }
+
+    .drop-list .icon {
+        margin: 20px 0;
+    }
 }
 
 @media (max-width: 480px) {
-  .box1, .wrapper {
-      padding: 20px;
-  }
-  form input, form select, form button {
-      font-size: 14px;
-  }
-  .select-box img {
-      max-width: 20px;
-  }
-}
 
+    .box1,
+    .wrapper {
+        padding: 20px;
+    }
+
+    form input,
+    form select,
+    form button {
+        font-size: 14px;
+    }
+
+    .select-box img {
+        max-width: 20px;
+    }
+}
